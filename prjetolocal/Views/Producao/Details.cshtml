@@ -1,0 +1,58 @@
+﻿@model prjetolocal.Models.Producao
+
+@{
+    ViewBag.Title = "Detalhes";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Producao</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Operador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Operador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Auxiliar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Auxiliar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Inicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Inicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantidade)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Listar", "List")
+</p>
